@@ -1,4 +1,4 @@
-class VideoButton extends SimditorButton
+class VideoButton extends Simditor.Button
 
   _videoTpl: '''
     <p><embed allowFullScreen="true" quality="high" width="620" height="500" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash" src="---video-src---"></embed></p>
@@ -85,7 +85,7 @@ class VideoButton extends SimditorButton
 
 Simditor.Toolbar.addButton(VideoButton)
 
-class VideoPopover extends SimditorPopover
+class VideoPopover extends Simditor.Popover
 
   _tpl: """
     <div class="link-settings">
@@ -97,7 +97,7 @@ class VideoPopover extends SimditorPopover
   """
 
   constructor: (@button) ->
-    super @button.editor
+    super @
 
   render: ->
     @el.addClass('video-popover')

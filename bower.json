@@ -16,11 +16,12 @@
     "**/.*",
     "node_modules",
     "vendor",
-		"Gruntfile.coffee",
-		"package.json"
+    "Gruntfile.coffee",
+    "package.json"
   ],
-	"dependencies": {
-		"jquery": "~2.1.0",
-		"simditor": "master"
-	}
+  "dependencies": {
+    "jquery": "~2.1.0",
+    "simditor": "master",
+    "font-awesome": "4.3.0"
+  }
 }
